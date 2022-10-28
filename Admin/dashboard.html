@@ -1,0 +1,530 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <BASE href="https://revolutiontech.com.bd/admin/cat_page_view.php"><!-- Tell the browser to be responsive to screen width -->
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<!-- Bootstrap 3.3.6 -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="dist/css/font-awesome/css/font-awesome.min.css">
+<!-- Ionicons -->
+
+<!-- Theme style -->
+<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+<!-- AdminLTE Skins. Choose a skin from the css/skins
+   folder instead of downloading all of them to reduce the load. -->
+<link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- jQuery 2.2.0 -->
+<script src="plugins/jQuery/jQuery-2.2.0.min.js"></script>
+<link rel="icon" type="image/png" href="../images/logo/favicon.png">
+	
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <!-- Header Open-->
+    
+ 
+
+<header class="main-header">
+    <!-- Logo -->
+    <a href="dashboard" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini">Revolutiontech</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">Revolutiontech</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="dist/img/avatar5.png" class="user-image" alt="User Image">
+              <span class="hidden-xs">info@revolutiontech.com.bd</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
+
+                <p>
+                  Administrator
+                  <small><span class="hidden-xs">info@revolutiontech.com.bd</span>
+</small>
+                </p>
+              </li>
+             
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="edit_profile" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="includes/logout.php" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+        
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <!-- Close Header-->
+  
+  <!-- Left side column. contains the logo and sidebar -->
+	
+	 
+ 
+ <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      
+
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        
+       <li class="treeview ">
+          <a href="#">
+            <i class="fa fa-list-alt"></i> <span>Product Management</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="add_new_item"><i class="fa fa-edit"></i> Add New Item</a></li>
+            <li ><a href="view_all_item"><i class="fa fa-cubes"></i>  All Items</a></li>
+          </ul>
+        </li>
+        
+             
+        <li class="treeview ">
+          <a href="#">
+            <i class="fa fa-folder"></i> <span>Category Management</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="add_new_category"><i class="fa fa-edit"></i> Add New Category</a></li>
+            <li ><a href="view_all_category"><i class="fa fa-th-list"></i>  All Category</a></li>
+            <li ><a href="add_new_sub_cat"><i class="fa fa-edit"></i> Add Sub Category</a></li>
+            <li ><a href="view_all_sub_cat"><i class="fa fa-th-list"></i>  All Sub Category</a></li>
+            <li ><a href="add_new_third_sub_cat"><i class="fa fa-edit"></i> Add Third Category</a></li>
+            <li ><a href="view_all_third_sub_cat"><i class="fa fa-th-list"></i> All Third Category</a></li>
+           </ul>
+        </li>
+		
+	
+		<li class="treeview ">
+          <a href="#">
+            <i class="fa fa-shopping-cart"></i> <span>Order Management</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+             <ul class="treeview-menu">
+               <li ><a href="view_all_retail_invoices"><i class="fa fa-th-list"></i> All Invoices</a></li>
+               
+               <li ><a href="payment_mathod"><i class="fa fa-th-list"></i> Shipping Method</a></li>
+            </ul>
+        </li>
+
+        
+       <li class="treeview ">
+          <a href="#">
+            <i class="fa fa-picture-o"></i> <span>Slide Management</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="add_new_slide"><i class="fa fa-edit"></i>Add New Slide Image</a></li>
+            <li ><a href="view_all_slide"><i class="fa fa-tree"></i> All Slide Image</a></li>
+          </ul>
+        </li>
+		
+				
+		<li class="treeview ">
+          <a href="#">
+           <i class="fa fa-quote-left" aria-hidden="true"></i><span>Brand</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="add_brand"><i class="fa fa-edit"></i> Add Brand</a></li>
+            <li ><a href="all_brand"><i class="fa fa-th-list"></i> All Brand</a></li>
+           </ul>
+        </li>
+		
+
+	
+        <li class="treeview ">
+          <a href="#">
+            <i class="fa fa-user"></i> <span>Customers</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="view_all_customer"><i class="fa fa-users"></i> All Customers </a></li>
+            <li ><a href="message"><i class="fa fa-th-list"></i> Message</a></li>
+          </ul>
+        </li>
+	
+		<li ><a href="view_all_post"><i class="fa fa-list"></i><span>View All Pages</span></a></li>
+		<li ><a href="sales_statement"><i class="fa fa-area-chart"></i> <span>Reports</span></a></li>
+        
+        <li class="treeview ">
+          <a href="#">
+            <i class="fa fa-cogs"></i> <span>Change Setting</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="edit_home_step_one"><i class="fa fa-edit"></i> Home Page Customization</a></li>
+            <li ><a href="social_networks"><i class="fa fa-edit"></i>Social Networks</a></li>
+            <li ><a href="company_details"><i class="fa fa-edit"></i> Company Info</a></li>
+            <li ><a href="change_company_details"><i class="fa fa-eraser"></i> Invoice Info</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>	
+  <!-- Content Wrapper. Contains page content --><title>Dashboard | CMS</title>
+  <div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box ctbg">
+            <div class="inner">
+                          <h3>775</h3>
+              <p>Total Item</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-bag"></i>
+            </div>
+            <a href="view_all_item" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+
+		<div class="col-lg-3 col-xs-6">
+          <div class="small-box ctbg">
+            <div class="inner">
+                          <h3>216,580 TK</h3>
+              <p>Total Sales </p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-android-contacts"></i>
+            </div>
+            <a href="view_all_retail_invoices" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+		
+	
+		
+		<div class="col-lg-3 col-xs-6">
+          <div class="small-box ctbg">
+            <div class="inner">
+                          <h3>11</h3>
+              <p>Total Categories</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-android-contacts"></i>
+            </div>
+            <a href="view_all_category" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+		
+	
+        
+        
+        <div class="col-lg-3 col-xs-6">
+          <div class="small-box ctbg">
+            <div class="inner">
+                          <h3>23</h3>
+              <p>Total Customer</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-android-contacts"></i>
+            </div>
+            <a href="view_all_customer" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+		
+      </div>
+
+
+      
+<div class="box box-danger">
+            <div class="box-header with-border">
+				<h3 class="box-title">Orders</h3>
+            </div>
+
+            
+<div class="box-body table-responsive no-padding">
+	<table class="table table-hover">
+		  <thead>
+             <tr class="info_member">
+					<th>#</th>
+					<th width="15%">Order ID</th>
+					<th>Date</th>
+					<th>Customer Name</th>
+					<th style="text-align:center;">Total</th>
+					<th style="text-align:center;">Activity</th>
+					<th style="text-align:center;" width="6%">Customer</th>
+					<th style="text-align:center;" width="6%">Admin</th>
+					<th width="6%" style="text-align: center;">Action</th>
+				</tr>
+                        </thead>
+                       <tbody>
+					                
+                            <tr>
+                                <td>1</td>
+                                <td><strong style="color:#017540;text-transform: uppercase;font-family: arial;font-size: 11px;">#16665368581690396408</strong></td>
+                                <td>2022-10-23</td>
+                                <td>Adil Al Nahian</td>
+                                <td style="text-align:center;"><b>৳25580</b></td>
+                                <td style="text-align:center;">
+								<span style='color: #008347;'>Pending...</span>                                </td>
+                                <td> 
+                                <a href="../order?id=16665368581690396408" target="_blank" class="btn btn-sm btn-success" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+								<td> 
+                                <a href="view_invoice_retail/16665368581690396408" class="btn btn-sm btn-danger" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+                                <td style="text-align: center;">
+                                <a href="apps/bin_cat/delete_invoice.php?actionID=view_all_retail_invoices&itemID=16665368581690396408" class="btn btn-danger btn-raised btn-xs" data-toggle="tooltip" data-placement="top" title="Delete This Row" style="font-size: 10px;" onClick="return confirm('Are you sure to Delete this Invoice?')"><i class="fa fa-close"></i><div class="ripple-container"></div></a>
+							</td>
+                            </tr>
+   						 	                
+                            <tr>
+                                <td>2</td>
+                                <td><strong style="color:#017540;text-transform: uppercase;font-family: arial;font-size: 11px;">#16661131961329359283</strong></td>
+                                <td>2022-10-18</td>
+                                <td>Kiron</td>
+                                <td style="text-align:center;"><b>৳59580</b></td>
+                                <td style="text-align:center;">
+								<span style='color: #008347;'>Pending...</span>                                </td>
+                                <td> 
+                                <a href="../order?id=16661131961329359283" target="_blank" class="btn btn-sm btn-success" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+								<td> 
+                                <a href="view_invoice_retail/16661131961329359283" class="btn btn-sm btn-danger" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+                                <td style="text-align: center;">
+                                <a href="apps/bin_cat/delete_invoice.php?actionID=view_all_retail_invoices&itemID=16661131961329359283" class="btn btn-danger btn-raised btn-xs" data-toggle="tooltip" data-placement="top" title="Delete This Row" style="font-size: 10px;" onClick="return confirm('Are you sure to Delete this Invoice?')"><i class="fa fa-close"></i><div class="ripple-container"></div></a>
+							</td>
+                            </tr>
+   						 	                
+                            <tr>
+                                <td>3</td>
+                                <td><strong style="color:#017540;text-transform: uppercase;font-family: arial;font-size: 11px;">#16660631382048978050</strong></td>
+                                <td>2022-10-18</td>
+                                <td>kiron</td>
+                                <td style="text-align:center;"><b>৳80</b></td>
+                                <td style="text-align:center;">
+								<span style='color: #0002BF;'>Shipping</span>                                </td>
+                                <td> 
+                                <a href="../order?id=16660631382048978050" target="_blank" class="btn btn-sm btn-success" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+								<td> 
+                                <a href="view_invoice_retail/16660631382048978050" class="btn btn-sm btn-danger" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+                                <td style="text-align: center;">
+                                <a href="apps/bin_cat/delete_invoice.php?actionID=view_all_retail_invoices&itemID=16660631382048978050" class="btn btn-danger btn-raised btn-xs" data-toggle="tooltip" data-placement="top" title="Delete This Row" style="font-size: 10px;" onClick="return confirm('Are you sure to Delete this Invoice?')"><i class="fa fa-close"></i><div class="ripple-container"></div></a>
+							</td>
+                            </tr>
+   						 	                
+                            <tr>
+                                <td>4</td>
+                                <td><strong style="color:#017540;text-transform: uppercase;font-family: arial;font-size: 11px;">#1665463105790827305</strong></td>
+                                <td>2022-10-11</td>
+                                <td>Nashid</td>
+                                <td style="text-align:center;"><b>৳25580</b></td>
+                                <td style="text-align:center;">
+								<span style='color: #008347;'>Pending...</span>                                </td>
+                                <td> 
+                                <a href="../order?id=1665463105790827305" target="_blank" class="btn btn-sm btn-success" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+								<td> 
+                                <a href="view_invoice_retail/1665463105790827305" class="btn btn-sm btn-danger" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+                                <td style="text-align: center;">
+                                <a href="apps/bin_cat/delete_invoice.php?actionID=view_all_retail_invoices&itemID=1665463105790827305" class="btn btn-danger btn-raised btn-xs" data-toggle="tooltip" data-placement="top" title="Delete This Row" style="font-size: 10px;" onClick="return confirm('Are you sure to Delete this Invoice?')"><i class="fa fa-close"></i><div class="ripple-container"></div></a>
+							</td>
+                            </tr>
+   						 	                
+                            <tr>
+                                <td>5</td>
+                                <td><strong style="color:#017540;text-transform: uppercase;font-family: arial;font-size: 11px;">#1665289620426282181</strong></td>
+                                <td>2022-10-09</td>
+                                <td>Nashid</td>
+                                <td style="text-align:center;"><b>৳216580</b></td>
+                                <td style="text-align:center;">
+								<span style='color: #0002BF;'>Delivery</span>                                </td>
+                                <td> 
+                                <a href="../order?id=1665289620426282181" target="_blank" class="btn btn-sm btn-success" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+								<td> 
+                                <a href="view_invoice_retail/1665289620426282181" class="btn btn-sm btn-danger" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+                                <td style="text-align: center;">
+                                <a href="apps/bin_cat/delete_invoice.php?actionID=view_all_retail_invoices&itemID=1665289620426282181" class="btn btn-danger btn-raised btn-xs" data-toggle="tooltip" data-placement="top" title="Delete This Row" style="font-size: 10px;" onClick="return confirm('Are you sure to Delete this Invoice?')"><i class="fa fa-close"></i><div class="ripple-container"></div></a>
+							</td>
+                            </tr>
+   						 	                
+                            <tr>
+                                <td>6</td>
+                                <td><strong style="color:#017540;text-transform: uppercase;font-family: arial;font-size: 11px;">#16644337571724986395</strong></td>
+                                <td>2022-09-29</td>
+                                <td>MD NASHID HASAN MIM</td>
+                                <td style="text-align:center;"><b>৳80</b></td>
+                                <td style="text-align:center;">
+								<span style='color: #008347;'>Pending...</span>                                </td>
+                                <td> 
+                                <a href="../order?id=16644337571724986395" target="_blank" class="btn btn-sm btn-success" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+								<td> 
+                                <a href="view_invoice_retail/16644337571724986395" class="btn btn-sm btn-danger" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+                                <td style="text-align: center;">
+                                <a href="apps/bin_cat/delete_invoice.php?actionID=view_all_retail_invoices&itemID=16644337571724986395" class="btn btn-danger btn-raised btn-xs" data-toggle="tooltip" data-placement="top" title="Delete This Row" style="font-size: 10px;" onClick="return confirm('Are you sure to Delete this Invoice?')"><i class="fa fa-close"></i><div class="ripple-container"></div></a>
+							</td>
+                            </tr>
+   						 	                
+                            <tr>
+                                <td>7</td>
+                                <td><strong style="color:#017540;text-transform: uppercase;font-family: arial;font-size: 11px;">#16644337051957325249</strong></td>
+                                <td>2022-09-29</td>
+                                <td>Y</td>
+                                <td style="text-align:center;"><b>৳80</b></td>
+                                <td style="text-align:center;">
+								<span style='color: #008347;'>Pending...</span>                                </td>
+                                <td> 
+                                <a href="../order?id=16644337051957325249" target="_blank" class="btn btn-sm btn-success" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+								<td> 
+                                <a href="view_invoice_retail/16644337051957325249" class="btn btn-sm btn-danger" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+                                <td style="text-align: center;">
+                                <a href="apps/bin_cat/delete_invoice.php?actionID=view_all_retail_invoices&itemID=16644337051957325249" class="btn btn-danger btn-raised btn-xs" data-toggle="tooltip" data-placement="top" title="Delete This Row" style="font-size: 10px;" onClick="return confirm('Are you sure to Delete this Invoice?')"><i class="fa fa-close"></i><div class="ripple-container"></div></a>
+							</td>
+                            </tr>
+   						 	                
+                            <tr>
+                                <td>8</td>
+                                <td><strong style="color:#017540;text-transform: uppercase;font-family: arial;font-size: 11px;">#1664426792242522820</strong></td>
+                                <td>2022-09-29</td>
+                                <td>naxi</td>
+                                <td style="text-align:center;"><b>৳80</b></td>
+                                <td style="text-align:center;">
+								<span style='color: #008347;'>Pending...</span>                                </td>
+                                <td> 
+                                <a href="../order?id=1664426792242522820" target="_blank" class="btn btn-sm btn-success" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+								<td> 
+                                <a href="view_invoice_retail/1664426792242522820" class="btn btn-sm btn-danger" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+                                <td style="text-align: center;">
+                                <a href="apps/bin_cat/delete_invoice.php?actionID=view_all_retail_invoices&itemID=1664426792242522820" class="btn btn-danger btn-raised btn-xs" data-toggle="tooltip" data-placement="top" title="Delete This Row" style="font-size: 10px;" onClick="return confirm('Are you sure to Delete this Invoice?')"><i class="fa fa-close"></i><div class="ripple-container"></div></a>
+							</td>
+                            </tr>
+   						 	                
+                            <tr>
+                                <td>9</td>
+                                <td><strong style="color:#017540;text-transform: uppercase;font-family: arial;font-size: 11px;">#16644251761045282073</strong></td>
+                                <td>2022-09-29</td>
+                                <td>Nashid</td>
+                                <td style="text-align:center;"><b>৳80</b></td>
+                                <td style="text-align:center;">
+								<span style='color: #008347;'>Pending...</span>                                </td>
+                                <td> 
+                                <a href="../order?id=16644251761045282073" target="_blank" class="btn btn-sm btn-success" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+								<td> 
+                                <a href="view_invoice_retail/16644251761045282073" class="btn btn-sm btn-danger" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+                                <td style="text-align: center;">
+                                <a href="apps/bin_cat/delete_invoice.php?actionID=view_all_retail_invoices&itemID=16644251761045282073" class="btn btn-danger btn-raised btn-xs" data-toggle="tooltip" data-placement="top" title="Delete This Row" style="font-size: 10px;" onClick="return confirm('Are you sure to Delete this Invoice?')"><i class="fa fa-close"></i><div class="ripple-container"></div></a>
+							</td>
+                            </tr>
+   						 	                
+                            <tr>
+                                <td>10</td>
+                                <td><strong style="color:#017540;text-transform: uppercase;font-family: arial;font-size: 11px;">#16643702171558281731</strong></td>
+                                <td>2022-09-28</td>
+                                <td>nashid</td>
+                                <td style="text-align:center;"><b>৳80</b></td>
+                                <td style="text-align:center;">
+								<span style='color: #008347;'>Pending...</span>                                </td>
+                                <td> 
+                                <a href="../order?id=16643702171558281731" target="_blank" class="btn btn-sm btn-success" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+								<td> 
+                                <a href="view_invoice_retail/16643702171558281731" class="btn btn-sm btn-danger" style="">
+                                	Invoice<div class="ripple-container"></div></a>
+                                </td>
+                                <td style="text-align: center;">
+                                <a href="apps/bin_cat/delete_invoice.php?actionID=view_all_retail_invoices&itemID=16643702171558281731" class="btn btn-danger btn-raised btn-xs" data-toggle="tooltip" data-placement="top" title="Delete This Row" style="font-size: 10px;" onClick="return confirm('Are you sure to Delete this Invoice?')"><i class="fa fa-close"></i><div class="ripple-container"></div></a>
+							</td>
+                            </tr>
+   						 	                         </tbody>
+                    </table>
+                </div>
+                
+
+</div>
+           
+       
+                          
+                          
+                          
+                                
+       </section>
+    <!-- /.content -->
+  </div>
+
+ 
+
+<!-- ./wrapper -->
+
+
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+
+
+</body>
+</html>

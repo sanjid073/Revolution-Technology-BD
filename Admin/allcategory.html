@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <BASE href="https://revolutiontech.com.bd/admin/cat_page_view.php"><!-- Tell the browser to be responsive to screen width -->
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<!-- Bootstrap 3.3.6 -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="dist/css/font-awesome/css/font-awesome.min.css">
+<!-- Ionicons -->
+
+<!-- Theme style -->
+<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+<!-- AdminLTE Skins. Choose a skin from the css/skins
+   folder instead of downloading all of them to reduce the load. -->
+<link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+
+<!-- jQuery 2.2.0 -->
+<script src="plugins/jQuery/jQuery-2.2.0.min.js"></script>
+<link rel="icon" type="image/png" href="../images/logo/favicon.png">
+	
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <!-- Header Open-->
+    
+ 
+
+<header class="main-header">
+    <!-- Logo -->
+    <a href="dashboard" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini">Revolutiontech</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">Revolutiontech</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="dist/img/avatar5.png" class="user-image" alt="User Image">
+              <span class="hidden-xs">info@revolutiontech.com.bd</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
+
+                <p>
+                  Administrator
+                  <small><span class="hidden-xs">info@revolutiontech.com.bd</span>
+</small>
+                </p>
+              </li>
+             
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="edit_profile" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="includes/logout.php" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+        
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <!-- Close Header-->
+  
+  <!-- Left side column. contains the logo and sidebar -->
+	
+	 
+ 
+ <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      
+
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        
+       <li class="treeview ">
+          <a href="#">
+            <i class="fa fa-list-alt"></i> <span>Product Management</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="add_new_item"><i class="fa fa-edit"></i> Add New Item</a></li>
+            <li ><a href="view_all_item"><i class="fa fa-cubes"></i>  All Items</a></li>
+          </ul>
+        </li>
+        
+             
+        <li class="treeview active">
+          <a href="#">
+            <i class="fa fa-folder"></i> <span>Category Management</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="add_new_category"><i class="fa fa-edit"></i> Add New Category</a></li>
+            <li class="active"><a href="view_all_category"><i class="fa fa-th-list"></i>  All Category</a></li>
+            <li ><a href="add_new_sub_cat"><i class="fa fa-edit"></i> Add Sub Category</a></li>
+            <li ><a href="view_all_sub_cat"><i class="fa fa-th-list"></i>  All Sub Category</a></li>
+            <li ><a href="add_new_third_sub_cat"><i class="fa fa-edit"></i> Add Third Category</a></li>
+            <li ><a href="view_all_third_sub_cat"><i class="fa fa-th-list"></i> All Third Category</a></li>
+           </ul>
+        </li>
+		
+	
+		<li class="treeview ">
+          <a href="#">
+            <i class="fa fa-shopping-cart"></i> <span>Order Management</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+             <ul class="treeview-menu">
+               <li ><a href="view_all_retail_invoices"><i class="fa fa-th-list"></i> All Invoices</a></li>
+               
+               <li ><a href="payment_mathod"><i class="fa fa-th-list"></i> Shipping Method</a></li>
+            </ul>
+        </li>
+
+        
+       <li class="treeview ">
+          <a href="#">
+            <i class="fa fa-picture-o"></i> <span>Slide Management</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="add_new_slide"><i class="fa fa-edit"></i>Add New Slide Image</a></li>
+            <li ><a href="view_all_slide"><i class="fa fa-tree"></i> All Slide Image</a></li>
+          </ul>
+        </li>
+		
+				
+		<li class="treeview ">
+          <a href="#">
+           <i class="fa fa-quote-left" aria-hidden="true"></i><span>Brand</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="add_brand"><i class="fa fa-edit"></i> Add Brand</a></li>
+            <li ><a href="all_brand"><i class="fa fa-th-list"></i> All Brand</a></li>
+           </ul>
+        </li>
+		
+
+	
+        <li class="treeview ">
+          <a href="#">
+            <i class="fa fa-user"></i> <span>Customers</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="view_all_customer"><i class="fa fa-users"></i> All Customers </a></li>
+            <li ><a href="message"><i class="fa fa-th-list"></i> Message</a></li>
+          </ul>
+        </li>
+	
+		<li ><a href="view_all_post"><i class="fa fa-list"></i><span>View All Pages</span></a></li>
+		<li ><a href="sales_statement"><i class="fa fa-area-chart"></i> <span>Reports</span></a></li>
+        
+        <li class="treeview ">
+          <a href="#">
+            <i class="fa fa-cogs"></i> <span>Change Setting</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="edit_home_step_one"><i class="fa fa-edit"></i> Home Page Customization</a></li>
+            <li ><a href="social_networks"><i class="fa fa-edit"></i>Social Networks</a></li>
+            <li ><a href="company_details"><i class="fa fa-edit"></i> Company Info</a></li>
+            <li ><a href="change_company_details"><i class="fa fa-eraser"></i> Invoice Info</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>	
+  <!-- Content Wrapper. Contains page content -->
+<script type="text/javascript">
+$(document).ready(function(){
+changePagination('0');    
+});
+function changePagination(pageId){
+     $(".flash").show();
+     $(".flash").fadeIn(400).html
+                ('Loading <img src="dist/img/ajax-loader.gif" />');
+				
+     var dataString = 'pageId='+ pageId;
+     $.ajax({
+           type: "POST",
+           url: "apps/load_data/loadDcat.php",
+           data:{
+          pageId: pageId
+    },
+           cache: false,
+           success: function(result){
+           $(".flash").hide();
+                 $("#pageData").html(result);
+           }
+      });
+
+}
+</script>
+
+  <title>View All Product's Category</title>
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+  
+
+<!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+      <a href="add_new_category" class="btn btn-lg btn-success  btn-raised btn-label" ><i class="fa fa-pencil-square-o"></i>&nbsp; Add New Category<div class="ripple-container"></div></a>
+         
+<a href="customize_listing" class="btn btn-md btn-warning  btn-raised btn-label" style="padding: 12px;"><i class="fa fa-arrows"></i>&nbsp; Category Customize<div class="ripple-container"></div></a>
+		 <p>
+          
+          <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Data List</h3>
+
+              <div class="box-tools">
+
+              </div>
+            </div>
+            <!-- /.box-header -->
+            
+	                <div id="loading" ></div>
+				<div id="pageData"></div> 
+           
+				<div class="box-footer clearfix">
+				 <span class="flash"></span>  
+				</div>
+                             <!-- /.box-body -->
+                          </div>
+                          <!-- /.box -->
+      				  </div>
+     			 </div>
+           </div>
+        <!--/.col (right) -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>  
+          
+
+ 
+
+<!-- ./wrapper -->
+
+
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+
+
+</body>
+</html>
